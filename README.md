@@ -4,7 +4,7 @@ An OpenAI gym environment for chess with observations and actions represented in
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/Fw4fhzK/Screen-Shot-2020-10-27-at-2-30-21-PM.png" alt="Screen-Shot-2020-10-27-at-2-30-21-PM" border="0"></a>
 
-This is a modification of my `gym-chess` module. This implementation represents observations and actions using the feature planes representation method described in the AlphaZero paper, [*Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*](https://arxiv.org/pdf/1712.01815.pdf)
+This is a modification of my [`gym-chess`](https://github.com/Ryan-Rudes/gym-chess) module. This implementation represents observations and actions using the feature planes representation method described in the AlphaZero paper, [*Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*](https://arxiv.org/pdf/1712.01815.pdf)
 
 ## Installation
 
