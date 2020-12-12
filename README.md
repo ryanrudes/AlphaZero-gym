@@ -46,3 +46,7 @@ The environment works as does any other `gym.Env` environment. Some basic functi
   > *next 8 planes encode possible knight moves for that piece. The final 9 planes encode possible*
   > *underpromotions for pawn moves or captures in two possible diagonals, to knight, bishop or*
   > *rook respectively. Other pawn moves or captures from the seventh rank are promoted to a queen.*
+* `env.observe()` or as an attribute, `env.state`
+* `env.legal_move_mask()` (function for masking invalid actions/illegal moves in the provided action policy)
+* `env.render(mode = '____')` (valid render modes are `'human'`, for visualizing the board in a pygame window, and `'rgb_array'` for returning the frame as an RGB array)
+* `env.close()`
