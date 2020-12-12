@@ -50,3 +50,37 @@ The environment works as does any other `gym.Env` environment. Some basic functi
 * `env.legal_move_mask()` (function for masking invalid actions/illegal moves in the provided action policy)
 * `env.render(mode = '____')` (valid render modes are `'human'`, for visualizing the board in a pygame window, and `'rgb_array'` for returning the frame as an RGB array)
 * `env.close()`
+
+## Example
+
+The below code sample simulates a game of chess with AlphaZero-style state-action representations:
+```python
+# Instantiate the environment
+env = Chess()
+
+# Reset the environment
+state = env.reset()
+
+# Generate a random policy
+p = np.random.random(size = (8, 8, 73))
+# Normalize the policy
+p = (p - p.min()) / (p.max() - p.min())
+
+# Simulate a game
+while not env.terminal:
+  state, reward, terminal, info = env.step(p)
+  env.render() # defaults to mode = 'human'
+  
+# Printout to demonstrate the output of the env.step() function
+print(state, reward, terminal, info)
+
+[[[0. 0. 0. ... 1. 1. 9.]
+  [0. 1. 0. ... 1. 1. 9.]
+  [0. 0. 1. ... 1. 1. 9.]
+
+ ...
+ 
+  [0. 0. 0. ... 1. 1. 9.]
+  [0. 0. 0. ... 1. 1. 9.]
+  [0. 0. 0. ... 1. 1. 9.]]] 0 True {'last_move': chess.Move.from_uci('c4a4'), 'turn': False}
+```
