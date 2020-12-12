@@ -87,4 +87,7 @@ print(state, reward, terminal, info)
      [0. 0. 0. ... 1. 1. 9.]
      [0. 0. 0. ... 1. 1. 9.]
      [0. 0. 0. ... 1. 1. 9.]]] 0 True {'last_move': chess.Move.from_uci('c4a4'), 'turn': False}
+     
+# Close the environment and the display window
+env.close()
 ```
