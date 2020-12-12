@@ -60,6 +60,8 @@ env = Chess()
 
 # Reset the environment
 state = env.reset()
+print (state.shape)
+>> (8, 8, 119)
 
 # Generate a random policy
 p = np.random.random(size = (8, 8, 73))
@@ -74,13 +76,13 @@ while not env.terminal:
 # Printout to demonstrate the output of the env.step() function
 print(state, reward, terminal, info)
 
-[[[0. 0. 0. ... 1. 1. 9.]
-  [0. 1. 0. ... 1. 1. 9.]
-  [0. 0. 1. ... 1. 1. 9.]
-
- ...
- 
-  [0. 0. 0. ... 1. 1. 9.]
-  [0. 0. 0. ... 1. 1. 9.]
-  [0. 0. 0. ... 1. 1. 9.]]] 0 True {'last_move': chess.Move.from_uci('c4a4'), 'turn': False}
+>> [[[0. 0. 0. ... 1. 1. 9.]
+>>   [0. 1. 0. ... 1. 1. 9.]
+>>   [0. 0. 1. ... 1. 1. 9.]
+>>
+>>  ...
+>>
+>>   [0. 0. 0. ... 1. 1. 9.]
+>>   [0. 0. 0. ... 1. 1. 9.]
+>>   [0. 0. 0. ... 1. 1. 9.]]] 0 True {'last_move': chess.Move.from_uci('c4a4'), 'turn': False}
 ```
