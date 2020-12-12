@@ -91,3 +91,8 @@ print(state, reward, terminal, info)
 # Close the environment and the display window
 env.close()
 ```
+
+## Remaining inaccuracies
+This is not a total replica of the paper's methods just yet, but there is only one aspect that still doesn't conform exactly to the paper: the board must reverse each move so that each observation is from the perspective of the color whose turn is to move.
+
+This will be implemented shortly.
