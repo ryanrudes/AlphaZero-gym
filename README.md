@@ -8,7 +8,7 @@ This is a modification of my [`gym-chess`](https://github.com/Ryan-Rudes/gym-che
 
 ## Installation
 
-This requires the installation of the [`python-chess`](https://github.com/niklasf/python-chess) library. Depending on your version of installation, you may or may not have to method `chess.Board.is_repetition`. If not, the source code of this method is included in the sole Python file in this repo.
+This requires the installation of the [`python-chess`](https://github.com/niklasf/python-chess) chess game engine library. Depending on your version of installation, you may or may not have the method `chess.Board.is_repetition` included in your particular version of the package. If not, the source code of this method is included in the sole Python file in this repo.
 
 List of required packages:
 * [`python-chess`](https://github.com/niklasf/python-chess)
