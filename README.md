@@ -60,6 +60,8 @@ env = Chess()
 
 # Reset the environment
 state = env.reset()
+
+# AlphaZero state representation shape for Chess
 print (state.shape)
 >> (8, 8, 119)
 
